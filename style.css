@@ -5,3 +5,160 @@ Description: Written for the technical interview
 Version: 0.0.1
 Tags: teo
 */
+body {
+	font-family: Arial;
+	background-color: #f6fafc;
+}
+.blog-masthead .container {
+	height: 100px;
+	color: #00217a;
+}
+.blog-masthead .container img[alt=logo] {
+	display: block;
+	margin: 30px auto;
+	float: left;
+}
+.blog-masthead .container .profile {
+	float: right;
+	display: block;
+	position: relative;
+	margin-top: 50px;
+}
+.blog-masthead .container .profile img {
+	border-radius: 25px;
+	float: left;
+	display: block;
+	margin-top: -10px;
+}
+.blog-masthead .container .profile .username {
+	margin-left: 10px;
+}
+.blog-masthead .container .profile .notifications {
+	display: block;
+	position: absolute;
+	right: -50px;
+	top: 10px;
+}
+.blog-masthead .container .profile .notifications span {
+    position: absolute;
+    top: -20px;
+    background-color: #006fff;
+    color: #ffffff;
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-family: Arial;
+    font-size: smaller;
+    left: 12px;
+}
+.blog-masthead .container .blog-nav {
+	display: block;
+	float: right;
+	margin: 40px 100px 0 0;
+}
+.blog-masthead .container .blog-nav a {
+	font-family: Arial;
+	font-weight: bold;
+}
+.blog-masthead .container .blog-nav a:hover {
+	text-decoration: none;
+}
+.blog-masthead .container .blog-nav li:hover {
+	padding-bottom: 8px;
+}
+.banner {
+	width: 100%;
+	display: block;
+	height: 390px;
+	background: url('img/alexa.png') 0 -100px no-repeat;
+}
+.banner * {
+	text-align: center;
+	color: #ffffff;
+}
+.banner h3 {
+	padding-top: 165px;
+	font-weight: bold;
+}
+.container .row .course {
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	padding: 0;
+	border: 1px solid #b3b9bf;
+}
+@media (min-width: 768px) {
+	.col-sm-4 {
+	    width: 32%;
+	    margin-right: 2%;
+	}
+	.col-sm-4:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+.container .row .course p:first-of-type img {
+	border-radius: 10px 10px 0 0;
+}
+.container .row .course p:last-of-type {
+	padding: 15px 15px 0 15px;
+	font-size: smaller;
+	color: #b3b9bf;
+	margin-top: 50px;
+}
+.container .row .course .post-title {
+	position: absolute;
+	top: 240px;
+	text-transform: capitalize;
+	font-weight: bold;
+	padding: 15px;
+	color: #000000;
+	border-top: 1px solid #b3b9bf;
+}
+.container .row .course .post-title:hover {
+	color: initial;
+}
+.container .row .course .course-footer {
+	display: block;
+	margin-bottom: 15px;
+}
+.container .row .course .course-footer a {
+	display: block;
+	background-image: linear-gradient(to right, #ee609c , #b465d9);
+	height: 20px;
+	border-radius: 3px;
+	color: #ffffff;
+	font-size: smaller;
+	float: left;
+	padding: 3px 10px;
+	margin: 0 15px;
+	text-align: center;
+}
+.container .row .course .course-footer a:hover {
+	text-decoration: none;
+}
+.container .row .course .course-footer .estimated-time {
+	font-size: smaller;
+	color: #b3b9bf;
+}
+.container .discover-more {
+	width: auto;
+	background: transparent;
+	color: #006fff;
+	padding: 7px 14px;
+	border: 1px solid #006fff;
+	border-radius: 5px;
+	margin: 20px auto 130px 40%;
+}
+.container .discover-more:hover {
+	background: #006fff;
+	color: #ffffff;
+}
+
+/* blog footer  */
+.blog-footer .container div:first-child {
+	float: left;
+}
+.blog-footer .container .links {
+	float: right;
+}
