@@ -9,6 +9,9 @@ body {
 	font-family: Arial;
 	background-color: #f6fafc;
 }
+.row {
+	margin: 90px 0 0;
+}
 .blog-masthead .container {
 	height: 100px;
 	color: #00217a;
@@ -70,6 +73,7 @@ body {
 	display: block;
 	height: 390px;
 	background: url('img/alexa.png') 0 -100px no-repeat;
+	background-size: cover;
 }
 .banner * {
 	text-align: center;
@@ -97,6 +101,9 @@ body {
 		margin-right: 0;
 	}
 }
+.container .row .course p:first-of-type {
+	overflow: hidden;
+}
 .container .row .course p:first-of-type img {
 	border-radius: 10px 10px 0 0;
 }
@@ -122,7 +129,7 @@ body {
 	display: block;
 	margin-bottom: 15px;
 }
-.container .row .course .course-footer a {
+.finance {
 	display: block;
 	background-image: linear-gradient(to right, #ee609c , #b465d9);
 	height: 20px;
@@ -148,11 +155,14 @@ body {
 	padding: 7px 14px;
 	border: 1px solid #006fff;
 	border-radius: 5px;
-	margin: 20px auto 130px 40%;
+	display: block;
+	margin: 20px auto 130px;
 }
-.container .discover-more:hover {
+.container .discover-more:hover,
+.blog-main .blog-post .course-chapter .start-chapter:hover {
 	background: #006fff;
 	color: #ffffff;
+	text-decoration: none;
 }
 
 /* blog footer  */
@@ -161,4 +171,171 @@ body {
 }
 .blog-footer .container .links {
 	float: right;
+}
+.blog-footer .container .links a {
+	margin-left: 20px;
+	color: #b3b9bf;
+}
+
+/* blog post */
+.banner .post-head {
+	margin: 0 auto 45px;
+	max-width: 800px;
+	text-align: left;
+	position: relative;
+	padding-top: 165px;
+}
+.banner .blog-post-title {
+	text-transform: capitalize;
+	font-size: x-large;
+	padding: 0
+}
+.banner .finance {    
+	margin: -70px 0 0 0px;
+    font-size: medium;
+    height: 30px;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.blog-post img:first-of-type {
+	border-top: 2px #006fff solid; 
+	display: block;
+	margin: 0 auto;
+}
+
+/* blog chapters */
+.blog-main .blog-post .course-chapter .post-title {
+	color: #006fff;
+	clear: both;
+	padding-left: 15px;
+}
+.blog-main .blog-post .course-chapter h3 {
+	font-weight: bold;
+}
+.blog-main .blog-post .course-chapter p {
+	color: #b3b9bf;
+	margin-bottom: 50px;
+}
+.blog-main .blog-post hr {
+	margin: 50px 0;
+	clear: both;
+}
+.blog-main .blog-post .course-chapter .start-chapter {
+	background: transparent;
+	color: #006fff;
+	padding: 7px 14px;
+	border: 1px solid #006fff;
+	border-radius: 5px;
+}
+.blog-main .blog-post .discover-more {
+	clear: both;
+	float: none;
+}
+
+/* login page */
+.login {
+	background: url('img/alexa.png') 0 0 no-repeat;
+	background-size: cover;
+	position: absolute;
+	display: table;
+	height: 100%;
+	width: 100%;
+	color: #ffffff;
+}
+.login .middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+.login .center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+.login footer {
+	position: fixed;
+	bottom: 50px;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.login footer a {
+	background-color: #006fff;
+	color: #ffffff;
+	padding: 5px 15px;
+	border-radius: 7px;
+}
+.login .col-sm-6 label {
+	display: none;
+}
+.login footer a:hover,
+.login .col-sm-6 .login-submit input:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #006fff;
+}
+.login .col-sm-6:first-child {
+	margin-top: 10%;
+}
+.login .col-sm-6:first-child * {
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+	font-size: xx-large;
+}
+.login .col-sm-6:first-child p {
+	color: #f7f7f7;
+	font-size: large;
+}
+.login .col-sm-6:last-child input {
+	width: 100%;
+	height: 45px;
+	padding: 10px 30px;
+	border-radius: 7px;
+	border: 0;
+	color: #000000;
+}
+.login .col-sm-6 .login-submit input,
+.login #registerform #wp-submit {
+	margin-top: 30px;
+	background-color: #006fff;
+	color: #ffffff;
+}
+.login #registerform #wp-submit {
+	margin: 0;
+}
+.login #registerform #wp-submit:hover {
+	color: #006fff;
+	background: #ffffff;
+}
+.login .col-sm-6 .forgot-password {
+	width: 300px;
+	display: block;
+	text-align: center;
+}
+.login .col-sm-6 .forgot-password a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.login .col-sm-6 .forgot-password a:hover {
+	color: #006fff;
+}
+.login #registerform .terms {
+	text-align: center;
+}
+.login #registerform .terms label {
+	display: initial;
+}
+.login #registerform .terms input {
+	height: auto;
+	width: auto;
+	cursor: pointer;
+}
+.login #registerform .terms a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.login .middle .center .col-sm-6 .error-message {
+	color: #ff0000;
 }

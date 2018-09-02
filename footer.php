@@ -6,7 +6,7 @@
           <b><?php echo get_bloginfo( 'description' ) . " " . date( 'Y' ); ?></b>. All rights reserved.
         </div>
         <div class="links">
-          <a href="">Terms & Conditions</a>
+          <a href="Privacy-policy">Terms & Conditions</a>
           <a href="Privacy-policy">Privacy</a>
           <a href="">Support</a>
         </div>

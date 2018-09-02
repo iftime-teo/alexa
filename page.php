@@ -1,24 +1,16 @@
-<?php get_header();
-if ( is_page('courses') ) { ?>
-	<div class="banner">
-		<h3>Browse through all Finance courses for Alexa</h3>
-		<h4>Pick the one you like and start learning</h4>
-	</div>
-<?php } ?>
+<?php get_header();?>
 	<div class="container">
-		<div class="blog-header">
-
-		</div>
 		<div class="row">
 			<?php 
-			if ( is_page('courses') ) {
-				$lastposts = get_posts( array(
-				    'posts_per_page' => 6
+			if ( is_page( 'courses' ) ) {
+				$lastposts = new WP_Query( array(
+				    'posts_per_page' => 6,
+				    'category_name' => 'course',
+				    'paged' => 1,
+				    'post_type' => 'post'
 				) );
-				 
-				if ( $lastposts ) {
-				    foreach ( $lastposts as $post ) :
-				        setup_postdata( $post ); ?>
+				if ( $lastposts -> have_posts() ) {
+				    while ( $lastposts -> have_posts() ) : $lastposts -> the_post() ?>
 				        <div class="course col-sm-4">
 				        	<a class='post-title' href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 				        	<?php the_content(); the_post_thumbnail_url(); ?>
@@ -30,11 +22,15 @@ if ( is_page('courses') ) { ?>
 				        	</span>
 				        </div>
 				    <?php
-				    endforeach; 
+				    endwhile;   
+				    //next_posts_link( 'Discover more', $lastposts -> max_num_pages );
 				    wp_reset_postdata();
 				}
 			} else get_template_part( 'content', get_post_format() );
 			?>
 		</div> <!-- /.row -->
-		<?php if ( is_page('courses') ) echo '<button class="discover-more">Discover more</button>'; ?>
+		<?php 
+			if ( is_page( 'courses' ) && sizeOf( get_posts( array( 'category_name' => 'course', 'posts_per_page' => 7 ) ) ) > 6 )
+			echo '<button class="discover-more" >Discover more</button>';
+		?>
 <?php get_footer(); ?>
