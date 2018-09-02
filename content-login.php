@@ -30,7 +30,7 @@
 			<div class="col-sm-6">
 				<?php
 				if ( get_query_var( 'login' ) == 'register' ) { ?>
-				<form name="registerform" id="registerform" action="<?php echo esc_url( site_url( 'login/?login=register', 'login_post' ) ); ?>" method="post" novalidate="novalidate">
+				<form name="registerform" id="registerform" action="<?php echo esc_url( site_url( 'wp-login.php?action=register', 'login_post' ) ); ?>" method="post" novalidate="novalidate">
 						<?php do_action( 'register_form' );	?>
 						<br class="clear" />
 						<input type="hidden" name="redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
