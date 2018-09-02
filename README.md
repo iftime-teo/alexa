@@ -1,15 +1,15 @@
 Still has to be done (digged a little, but couldn't find how to do it or didn't worked how i wanted to):
-    - handle errors in register and login page (especially in register page);
-    - pagination for homepage and courses page - the button is there when it needs to be, but has no functionality yet;
-    - the notifications are static. I don't know what notifications (or where to get them from) was i supposed to implement;
-    - the responsiveness needs to be reviewed (almost nothing done there);
-    - SEO needs to be reviewed. In terms of page loading time, i tried to keep my code simple and clear, so i guess that there's the only touched SEO area.
+- handle errors in register and login page (especially in register page);
+- pagination for homepage and courses page - the button is there when it needs to be, but has no functionality yet;
+- the notifications are static. I don't know what notifications (or where to get them from) was i supposed to implement;
+- the responsiveness needs to be reviewed (almost nothing done there);
+- SEO needs to be reviewed. In terms of page loading time, i tried to keep my code simple and clear, so i guess that there's the only touched SEO area.
 
 Unclear requests:
-    - the image for homepage contains 6 "courses" with thumbnail, title and description. The confusing part is that in the courses page, the "course" description has something different. I chose that the content will go below the "banner", then continued with the Chapter listing;
-    - the notifications, as i mentioned above, are written "by hand", so the functionality will be, most probably, implemented after clearing the notifications origin.
+- the image for homepage contains 6 "courses" with thumbnail, title and description. The confusing part is that in the courses page, the "course" description has something different. I chose that the content will go below the "banner", then continued with the Chapter listing;
+- the notifications, as i mentioned above, are written "by hand", so the functionality will be, most probably, implemented after clearing the notifications origin.
     
-    Sidenote: haven't used any js scripts in the theme;
+    Sidenote: haven't used any js scripts in the theme; didn't used forks and pull request because i felt it's easier for me to just straight edit the files whn i'm done and happy with the test and results on localhost.
     
 FUNCTIONALITY:
 
